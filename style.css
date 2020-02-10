@@ -1,0 +1,156 @@
+.container {
+    display: grid;
+    background: #353535;
+    margin-left: 40%;
+    justify-content: center;
+    width: 450px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+.wrapper {
+    display: grid;
+    height: 350px;
+    width: 350px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 3px;
+    grid-template-areas: 
+    "a b c d e"
+    "f g h i j"
+    "k l m n o"
+    "p q r s s";
+}
+
+.textbox {
+    display:flex;
+    justify-content: right;
+    width: 350px;
+    height: 100px;
+    background: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    background-color: #f0f0f0;
+}
+
+#topText {
+    padding-top: 1%;
+    position: absolute;
+    font-size: 1em;
+    margin-right: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+}
+
+#mainText {
+    font-size: 1.6em;
+    height: 60%;
+    margin-right: 5%;
+    margin-top: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+}
+
+.gridContain {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+}
+
+.numButton {
+    background-color: #d2d2d2;
+    font-size: 15pt;
+    border: 2px solid black;
+}
+
+.opButton {
+    font-size: 15pt;
+    border: 2px solid black;
+    background-color: #7f7f7f;
+    color: white;
+}
+
+.clearButton, .decimal, .equals {
+    font-size: 15pt; 
+    border: 2px solid black;
+}
+
+#equal:hover {
+    background-color: #ff7917;
+    color: white;
+}
+
+.clearButton:hover, .numButton:hover, .decimal:hover {
+    background-color: gray;
+    color: white;
+}
+
+.opButton:hover {
+    background-color: #d2d2d2;
+    color: black;
+}
+
+#b1 {
+    grid-area: a;
+}
+
+#b2 {
+    grid-area: b;
+}
+
+#b3 {
+    grid-area: c;
+}
+
+#b4 {
+    grid-area: f;
+}
+
+#b5 {
+    grid-area: g;
+}
+
+#b6 {
+    grid-area: h;
+}
+
+#b7 {
+    grid-area: k;
+}
+
+#b8 {
+    grid-area: l;
+}
+
+#b9 {
+    grid-area: m;
+}
+
+#b10 {
+    grid-area: q;
+}
+
+#clearButt {
+    grid-area: p;
+}
+
+#equal {
+    background-color: #ffa749;
+    grid-area: s;
+}
+
+#point {
+    grid-area: r;
+}
+
+#plus {
+    grid-area: j;
+}
+
+#expo {
+    grid-area: o;
+}
